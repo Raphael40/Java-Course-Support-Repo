@@ -18,6 +18,21 @@ public class FirstClass {
         System.out.println((three < 20 && ten < 20));
 
         System.out.println(!true);
+
+        String cat = "caspian";
+        System.out.println(cat.startsWith("c"));
+
+        String h = "Hello";
+        String t = "there";
+
+        String greeting = h + " " + t + ", General Grevious";
+        System.out.println(greeting);
+
+        String greeting2 = h.concat(" ").concat(t).concat(", General Grevious");
+        System.out.println(greeting2);
+
+        String sentence = "And then the main character said \"This cereal is really tasty\"";
+        System.out.println(sentence);
     }
 
 }
