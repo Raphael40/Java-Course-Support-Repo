@@ -1,0 +1,49 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_27_06_2024_18_26_[Changes]1" date="1719509196021" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2024_18_26_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 27/06/2024 18:26 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Java-Course-Support-Repo/main/java/Coffee.class" />
+    <option name="AFTER_PATH" value="out/production/Java-Course-Support-Repo/main/java/Coffee.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2024_18_26_[Changes]1/Coffee.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Java-Course-Support-Repo/main/java/Patient.class" />
+    <option name="AFTER_PATH" value="out/production/Java-Course-Support-Repo/main/java/Patient.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2024_18_26_[Changes]1/Patient.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/test/Java-Course-Support-Repo/main/java/CoffeeTest.class" />
+    <option name="AFTER_PATH" value="out/test/Java-Course-Support-Repo/main/java/CoffeeTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2024_18_26_[Changes]1/CoffeeTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/test/Java-Course-Support-Repo/main/java/CalculatorTest.class" />
+    <option name="AFTER_PATH" value="out/test/Java-Course-Support-Repo/main/java/CalculatorTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2024_18_26_[Changes]1/CalculatorTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/test/Java-Course-Support-Repo/main/java/PatientTest.class" />
+    <option name="AFTER_PATH" value="out/test/Java-Course-Support-Repo/main/java/PatientTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2024_18_26_[Changes]1/PatientTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Java-Course-Support-Repo/main/java/Calculator.class" />
+    <option name="AFTER_PATH" value="out/production/Java-Course-Support-Repo/main/java/Calculator.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2024_18_26_[Changes]1/Calculator.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Java-Course-Support-Repo/main/java/MyCalculatorTest.class" />
+    <option name="AFTER_PATH" value="out/production/Java-Course-Support-Repo/main/java/MyCalculatorTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2024_18_26_[Changes]1/MyCalculatorTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Java-Course-Support-Repo/main/java/Hospital.class" />
+    <option name="AFTER_PATH" value="out/production/Java-Course-Support-Repo/main/java/Hospital.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2024_18_26_[Changes]1/Hospital.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/test/Java-Course-Support-Repo/main/java/HospitalTest.class" />
+    <option name="AFTER_PATH" value="out/test/Java-Course-Support-Repo/main/java/HospitalTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2024_18_26_[Changes]1/HospitalTest.class" />
+  </binary>
+</changelist>

@@ -1,0 +1,50 @@
+Index: test/main/java/HospitalTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package main.java;\r\n\r\nimport org.junit.jupiter.api.DisplayName;\r\nimport org.junit.jupiter.api.Test;\r\n\r\nimport java.util.ArrayList;\r\n\r\nimport static org.junit.jupiter.api.Assertions.*;\r\n\r\nclass HospitalTest {\r\n\r\n    @Test\r\n    @DisplayName(\"Hospital addPatient() method\")\r\n    void testAddPatient() {\r\n        Patient testPatient = new Patient(\"Test\", 30);\r\n        testPatient.updateCondition(\"Test condition\");\r\n\r\n        Hospital.addPatient(testPatient);\r\n\r\n        assertEquals(1, Hospital.patients.size());\r\n    }\r\n\r\n    @Test\r\n    @DisplayName(\"Hospital addPatient() method\")\r\n    void testListRecords() {\r\n        // Create and add our first patient\r\n        Patient testPatient = new Patient(\"Test\", 30);\r\n        testPatient.updateCondition(\"Test condition\");\r\n        Hospital.addPatient(testPatient);\r\n\r\n        // Create and add our second patient\r\n        Patient testPatient2 = new Patient(\"Test2\", 32);\r\n        testPatient2.updateCondition(\"Test condition 2\");\r\n        Hospital.addPatient(testPatient2);\r\n\r\n        // create a new ArrayList equal to our expected output\r\n        ArrayList<String> expectedOutput = new ArrayList<>();\r\n        expectedOutput.add(\"Test is 30 years old and has: Test condition\");\r\n        expectedOutput.add(\"Test2 is 32 years old and has: Test condition 2\");\r\n\r\n        assertEquals(expectedOutput, Hospital.listRecords());\r\n    }\r\n}
+===================================================================
+diff --git a/test/main/java/HospitalTest.java b/test/main/java/HospitalTest.java
+--- a/test/main/java/HospitalTest.java	
++++ b/test/main/java/HospitalTest.java	
+@@ -7,6 +7,7 @@
+ 
+ import static org.junit.jupiter.api.Assertions.*;
+ 
++// Tests are clashing with one another
+ class HospitalTest {
+ 
+     @Test
+Index: out/production/Java-Course-Support-Repo/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"17\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+===================================================================
+diff --git a/out/production/Java-Course-Support-Repo/.idea/misc.xml b/out/production/Java-Course-Support-Repo/.idea/misc.xml
+--- a/out/production/Java-Course-Support-Repo/.idea/misc.xml	
++++ b/out/production/Java-Course-Support-Repo/.idea/misc.xml	
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" project-jdk-name="17" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_21_PREVIEW" project-jdk-name="temurin-21 (WSL)" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"17\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	
++++ b/.idea/misc.xml	
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" project-jdk-name="17" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_21_PREVIEW" project-jdk-name="temurin-21 (WSL)" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
