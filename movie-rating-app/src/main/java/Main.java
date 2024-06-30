@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 public class Main {
     final private static MovieLibrary movieLibrary = new MovieLibrary();
-    final private static Scanner scanner = new Scanner(System.in);
+    final private static Scanner movieScanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         boolean running = true;
 
         while (running) {
             printOption();
-            int choice = scanner.nextInt();
-            scanner.nextLine();
+            int choice = movieScanner.nextInt();
+            movieScanner.nextLine();
             if (choice == 1) {
                 addMovie();
             } else if (choice == 2) {
@@ -42,13 +42,14 @@ public class Main {
 
     private static void addMovie() {
         System.out.println("Enter the title of the movie:");
-        String title = scanner.nextLine();
-        System.out.println("Enter the director of the movie:");
-        String director = scanner.nextLine();
+        String title = movieScanner.nextLine();
         System.out.println("Enter the rating of the movie:");
-        double rating = scanner.nextDouble();
+        double rating = movieScanner.nextDouble();
+        System.out.println("Enter the director of the movie:");
+        String director = movieScanner.nextLine();
         System.out.println("Enter the year of the movie:");
-        int year = scanner.nextInt();
+        int year = movieScanner.nextInt();
+
 
         Movie movie = new Movie(title, director, rating, year);
         movieLibrary.addMovie(movie);
@@ -57,16 +58,16 @@ public class Main {
 
     private static void rateMovie() {
         System.out.println("Enter the title of the movie:");
-        String title = scanner.nextLine();
+        String title = movieScanner.nextLine();
         System.out.println("Enter the new rating of the movie:");
-        double rating = scanner.nextDouble();
-        scanner.nextLine();
+        double rating = movieScanner.nextDouble();
+        movieScanner.nextLine();
         movieLibrary.rateMovie(title, rating);
     }
 
     private static void removeMovie() {
         System.out.println("Enter the title of the movie:");
-        String title = scanner.nextLine();
+        String title = movieScanner.nextLine();
         Movie movie = movieLibrary.getMovieByTitle(title);
         if (movie != null) {
             movieLibrary.removeMovie(movie);
@@ -83,7 +84,7 @@ public class Main {
 
     private static void listSingleMovie() {
         System.out.println("Enter the title of the movie:");
-        String title = scanner.nextLine();
+        String title = movieScanner.nextLine();
 
         Movie movie = movieLibrary.getMovieByTitle(title);
         if (movie != null) {
