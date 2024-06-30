@@ -13,13 +13,8 @@ public class MovieLibrary {
         movies.add(movie);
     }
 
-    public void rateMovie(String title, double rating) {
-        Movie movie = getMovieByTitle(title);
-        if (movie != null) {
-            movie.setRating(rating);
-        } else {
-            System.out.println("Movie not found.");
-        }
+    public void rateMovie(Movie movie, double rating) {
+        movie.setRating(rating);
     }
 
     public void removeMovie(Movie movie) {

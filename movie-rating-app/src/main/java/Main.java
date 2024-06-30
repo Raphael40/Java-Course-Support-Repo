@@ -41,28 +41,46 @@ public class Main {
     }
 
     private static void addMovie() {
-        System.out.println("Enter the title of the movie:");
-        String title = movieScanner.nextLine();
-        System.out.println("Enter the rating of the movie:");
-        double rating = movieScanner.nextDouble();
-        System.out.println("Enter the director of the movie:");
-        String director = movieScanner.nextLine();
-        System.out.println("Enter the year of the movie:");
-        int year = movieScanner.nextInt();
+        try {
+            System.out.println("Enter the title of the movie:");
+            String title = movieScanner.nextLine();
+            System.out.println("Enter the director of the movie:");
+            String director = movieScanner.nextLine();
+            System.out.println("Enter the rating of the movie:");
+            double rating = movieScanner.nextDouble();
+            System.out.println("Enter the year of the movie:");
+            int year = movieScanner.nextInt();
 
-
-        Movie movie = new Movie(title, director, rating, year);
-        movieLibrary.addMovie(movie);
-        System.out.println("Movie added.");
+            Movie movie = new Movie(title, director, rating, year);
+            movieLibrary.addMovie(movie);
+            System.out.println("Movie added.");
+        } catch (Exception e) {
+            System.out.println("Invalid input. Please enter the correct data types.");
+            movieScanner.nextLine();
+        }
     }
 
     private static void rateMovie() {
-        System.out.println("Enter the title of the movie:");
-        String title = movieScanner.nextLine();
-        System.out.println("Enter the new rating of the movie:");
-        double rating = movieScanner.nextDouble();
-        movieScanner.nextLine();
-        movieLibrary.rateMovie(title, rating);
+        try {
+            System.out.println("Enter the title of the movie:");
+            String title = movieScanner.nextLine();
+
+            Movie movie = movieLibrary.getMovieByTitle(title);
+            if (movie == null) {
+                System.out.println("Movie not found.");
+                return;
+            }
+
+            System.out.println("Enter the new rating of the movie:");
+            double rating = movieScanner.nextDouble();
+            movieScanner.nextLine();
+
+            movieLibrary.rateMovie(movie, rating);
+            System.out.println("Movie rating updated.");
+        } catch (Exception e) {
+            System.out.println("Invalid input. Please enter the correct data types.");
+            movieScanner.nextLine();
+        }
     }
 
     private static void removeMovie() {
