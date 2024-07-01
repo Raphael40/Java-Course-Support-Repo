@@ -30,6 +30,10 @@ public class Movie {
     }
 
     public void setRating(double rating) {
+        if (rating < 0 || rating > 10) {
+            throw new IllegalArgumentException("Rating must be between 0 and 10.");
+        }
+
         this.rating = rating;
     }
 }

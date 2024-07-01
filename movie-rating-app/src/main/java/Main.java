@@ -10,7 +10,7 @@ public class Main {
         boolean running = true;
 
         while (running) {
-            printOption();
+            printOptions();
             int choice = movieScanner.nextInt();
             movieScanner.nextLine();
             if (choice == 1) {
@@ -18,12 +18,13 @@ public class Main {
             } else if (choice == 2) {
                 rateMovie();
             } else if (choice == 3) {
-                removeMovie();
-            } else if (choice == 4) {
-                listMovies();
-            } else if (choice == 5) {
                 listSingleMovie();
+            } else if (choice == 4) {
+                listAllMovies();
+            } else if (choice == 5) {
+                removeMovie();
             } else if (choice == 6) {
+                System.out.println("Exiting...");
                 running = false;
             } else {
                 System.out.println("Invalid choice.");
@@ -31,12 +32,12 @@ public class Main {
         }
     }
 
-    private static void printOption() {
+    private static void printOptions() {
         System.out.println("1. Add movie");
         System.out.println("2. Rate movie");
-        System.out.println("3. Remove movie");
+        System.out.println("3. List single movie");
         System.out.println("4. List movies");
-        System.out.println("5. List single movie");
+        System.out.println("5. Remove movie");
         System.out.println("6. Exit");
     }
 
@@ -83,32 +84,56 @@ public class Main {
         }
     }
 
-    private static void removeMovie() {
-        System.out.println("Enter the title of the movie:");
-        String title = movieScanner.nextLine();
-        Movie movie = movieLibrary.getMovieByTitle(title);
-        if (movie != null) {
-            movieLibrary.removeMovie(movie);
-        } else {
-            System.out.println("Movie not found.");
-        }
-    }
-
-    private static void listMovies() {
-        for (Movie movie : movieLibrary.getMovies()) {
-            System.out.println(movie.getTitle() + " (" + movie.getYear() + ") - " + movie.getDirector() + " - " + movie.getRating());
-        }
-    }
-
     private static void listSingleMovie() {
-        System.out.println("Enter the title of the movie:");
-        String title = movieScanner.nextLine();
+        try {
+            System.out.println("Enter the title of the movie:");
+            String title = movieScanner.nextLine();
 
-        Movie movie = movieLibrary.getMovieByTitle(title);
-        if (movie != null) {
-            System.out.println(movie.getTitle() + " (" + movie.getYear() + ") - " + movie.getDirector() + " - " + movie.getRating());
-        } else {
-            System.out.println("Movie not found.");
+            Movie movie = movieLibrary.getMovieByTitle(title);
+            if (movie != null) {
+                System.out.println(movie.getTitle() + " (" + movie.getYear() + ") - " + movie.getDirector() + " - " + movie.getRating());
+            } else {
+                System.out.println("Movie not found.");
+            }
+        } catch (Exception e) {
+            System.out.println("Invalid input. Please enter the correct data types.");
+            movieScanner.nextLine();
+        }
+    }
+
+    private static void listAllMovies() {
+        try {
+            if (movieLibrary.getMovies().isEmpty()) {
+                System.out.println("No movies found.");
+                return;
+            }
+
+            int count = 1;
+            for (Movie movie : movieLibrary.getMovies()) {
+                System.out.println(count + ": " + movie.getTitle() + " (" + movie.getYear() + ") - " + movie.getDirector() + " - " + movie.getRating());
+                count++;
+            }
+        } catch (Exception e) {
+            System.out.println("Invalid input. Please enter the correct data types.");
+            movieScanner.nextLine();
+        }
+    }
+
+    public static void removeMovie() {
+        try {
+            System.out.println("Enter the title of the movie:");
+            String title = movieScanner.nextLine();
+
+            Movie movie = movieLibrary.getMovieByTitle(title);
+            if (movie != null) {
+                movieLibrary.removeMovie(movie);
+                System.out.println("Movie removed.");
+            } else {
+                System.out.println("Movie not found.");
+            }
+        } catch (Exception e) {
+            System.out.println("Invalid input. Please enter the correct data types.");
+            movieScanner.nextLine();
         }
     }
 }
