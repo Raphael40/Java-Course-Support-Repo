@@ -1,9 +1,14 @@
 # Movie-Rating-App
 
-A simple commandline app that lets you add a Movie with a Title, Rating, Director and Year. The app lets you set a new Rating, list all Movies, list a single Movie and remove a Movie.
+A simple commandline app that lets you perform the following actions:
+
+1. Add Movie (Title, Director, Rating, Year)
+2. Rate Movie
+3. List Single Movie
+4. List Movies
+5. Remove Movie
+6. Exit
 
 ## Tech stack:
 
-Java
-Junit
-Intellij Builder
+Java, Junit, IntelliJ Builder
