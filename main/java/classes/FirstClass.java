@@ -1,4 +1,4 @@
-package exercises;
+package main.java.classes;
 
 public class FirstClass {
 
