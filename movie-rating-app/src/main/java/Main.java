@@ -1,5 +1,6 @@
 package main.java;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -56,8 +57,9 @@ public class Main {
             movieLibrary.addMovie(movie);
             System.out.println("Movie added.");
         } catch (Exception e) {
-            System.out.println("Invalid input. Please enter the correct data types.");
-            movieScanner.nextLine();
+            throw new InputMismatchException("Invalid input. Please enter the correct data types.");
+
+//            System.out.println("Invalid input. Please enter the correct data types.");
         }
     }
 
@@ -79,8 +81,8 @@ public class Main {
             movieLibrary.rateMovie(movie, rating);
             System.out.println("Movie rating updated.");
         } catch (Exception e) {
-            System.out.println("Invalid input. Please enter the correct data types.");
             movieScanner.nextLine();
+            System.out.println("Invalid input. Please enter the correct data types.");
         }
     }
 
@@ -96,8 +98,8 @@ public class Main {
                 System.out.println("Movie not found.");
             }
         } catch (Exception e) {
-            System.out.println("Invalid input. Please enter the correct data types.");
             movieScanner.nextLine();
+            System.out.println("Invalid input. Please enter the correct data types.");
         }
     }
 
@@ -114,8 +116,8 @@ public class Main {
                 count++;
             }
         } catch (Exception e) {
-            System.out.println("Invalid input. Please enter the correct data types.");
             movieScanner.nextLine();
+            System.out.println("Invalid input. Please enter the correct data types.");
         }
     }
 
@@ -132,8 +134,8 @@ public class Main {
                 System.out.println("Movie not found.");
             }
         } catch (Exception e) {
-            System.out.println("Invalid input. Please enter the correct data types.");
             movieScanner.nextLine();
+            System.out.println("Invalid input. Please enter the correct data types.");
         }
     }
 }

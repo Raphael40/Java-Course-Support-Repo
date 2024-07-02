@@ -1,0 +1,10 @@
+# Ignore all .idea files
+.idea/
+
+# Ignore compiled Java files
+out/
+
+# Ignore IntelliJ project files
+*.iml
+
+
