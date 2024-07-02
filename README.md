@@ -1,5 +1,5 @@
 # Java-Course-Support-Repo
-Supporting repo for Java Course exercises
+Supporting repo for Java Course
 
 ## How to use this repo
 
