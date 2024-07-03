@@ -3,8 +3,7 @@ package main.java.classes;
 public class FirstClass {
 
     public static void main(String[] items) {
-        String text = "This is my first class";
-        System.out.println(text);
+        System.out.println("This is my first class");
 
         int ten = 10;
         int three = 3;
