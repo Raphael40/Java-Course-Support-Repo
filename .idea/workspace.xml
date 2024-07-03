@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b21d915f-bf9b-4a92-9282-99ee8a3a6880" name="Changes" comment="" />
+    <list default="true" id="b21d915f-bf9b-4a92-9282-99ee8a3a6880" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Java-Course-Support-Repo.iml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="java-fundamentals-completed" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,8 +33,12 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "advanced-fundamentals-completed",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "//wsl.localhost/Ubuntu/home/jfesting/workspace/projects/movie-rating-app"
+    "last_opened_file_path": "//wsl.localhost/Ubuntu/home/jfesting/workspace/projects/movie-rating-app",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.24482758"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -56,6 +62,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
