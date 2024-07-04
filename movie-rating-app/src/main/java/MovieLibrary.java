@@ -1,16 +1,17 @@
 package main.java;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class MovieLibrary {
-    private ArrayList<Movie> movies;
+    final private List<Movie> movies;
 
-    public MovieLibrary() {
-        movies = new ArrayList<Movie>();
+    public MovieLibrary(List<Movie> movies) {
+//        movies = new ArrayList<Movie>();
+        this.movies = movies;
     }
 
     public void addMovie(Movie movie) {
-        movies.add(movie);
+        this.movies.add(movie);
     }
 
     public void rateMovie(Movie movie, double rating) {
@@ -18,15 +19,15 @@ public class MovieLibrary {
     }
 
     public void removeMovie(Movie movie) {
-        movies.remove(movie);
+        this.movies.remove(movie);
     }
 
-    public ArrayList<Movie> getMovies() {
-        return movies;
+    public List<Movie> getMovies() {
+        return this.movies;
     }
 
     public Movie getMovieByTitle(String title) {
-        for (Movie movie : movies) {
+        for (Movie movie : this.movies) {
             if (movie.getTitle().equalsIgnoreCase(title)) {
                 return movie;
             }

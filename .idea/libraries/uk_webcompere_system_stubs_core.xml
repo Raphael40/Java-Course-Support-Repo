@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="uk.webcompere.system.stubs.core" type="repository">
+    <properties maven-id="uk.org.webcompere:system-stubs-core:2.1.6" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/uk/org/webcompere/system-stubs-core/2.1.6/system-stubs-core-2.1.6.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/net/bytebuddy/byte-buddy/1.14.9/byte-buddy-1.14.9.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/net/bytebuddy/byte-buddy-agent/1.14.9/byte-buddy-agent-1.14.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

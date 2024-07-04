@@ -1,10 +1,12 @@
 package main.java;
 
+import java.util.ArrayList;
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    final private static MovieLibrary movieLibrary = new MovieLibrary();
+    private static MovieLibrary movieLibrary;
     final private static Scanner movieScanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -14,7 +16,9 @@ public class Main {
             printOptions();
             int choice = movieScanner.nextInt();
             movieScanner.nextLine();
+            // Make this a switch statement (for performance)
             if (choice == 1) {
+                // addMovieInputs()
                 addMovie();
             } else if (choice == 2) {
                 rateMovie();
@@ -42,8 +46,9 @@ public class Main {
         System.out.println("6. Exit");
     }
 
-    private static void addMovie() {
+    public static void addMovie() {
         try {
+            // Extract into seperate method
             System.out.println("Enter the title of the movie:");
             String title = movieScanner.nextLine();
             System.out.println("Enter the director of the movie:");
@@ -54,6 +59,8 @@ public class Main {
             int year = movieScanner.nextInt();
 
             Movie movie = new Movie(title, director, rating, year);
+            List<Movie> movies = new ArrayList<>();
+            movieLibrary = new MovieLibrary(movies);
             movieLibrary.addMovie(movie);
             System.out.println("Movie added.");
         } catch (Exception e) {
