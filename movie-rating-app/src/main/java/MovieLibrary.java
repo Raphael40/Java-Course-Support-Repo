@@ -6,7 +6,6 @@ public class MovieLibrary {
     final private List<Movie> movies;
 
     public MovieLibrary(List<Movie> movies) {
-//        movies = new ArrayList<Movie>();
         this.movies = movies;
     }
 

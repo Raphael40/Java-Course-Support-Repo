@@ -4,22 +4,25 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 
+import java.util.ArrayList;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class MovieLibraryTest {
 
-    private MovieLibrary testMovieLibrary;
-    private Movie testMovie;
+    private MovieLibrary testMovieLibrary; // MovieLibrary instance
 
     @BeforeEach
     void setUp() {
-        testMovieLibrary = new MovieLibrary();
-        testMovie = new Movie("test title", "test director", 5.0, 2021);
+        ArrayList<Movie> moviesArrayList = new ArrayList<>(); // initialise ArrayList
+        testMovieLibrary = new MovieLibrary(moviesArrayList); // Assign MovieLibrary instance with ArrayList
     }
 
     @Test
     @DisplayName("addMovie test")
     void addMovie() {
+        Movie testMovie = new Movie("test title", "test director", 6.0, 2022);
+
         testMovieLibrary.addMovie(testMovie);
 
         assertEquals(1, testMovieLibrary.getMovies().size());
@@ -28,6 +31,8 @@ class MovieLibraryTest {
     @Test
     @DisplayName("rateMovie test")
     void rateMovie() {
+        Movie testMovie = new Movie("test title", "test director", 6.0, 2022);
+
         testMovieLibrary.addMovie(testMovie);
 
         testMovieLibrary.rateMovie(testMovie, 4.0);
@@ -38,6 +43,8 @@ class MovieLibraryTest {
     @Test
     @DisplayName("removeMovie test")
     void removeMovie() {
+        Movie testMovie = new Movie("test title", "test director", 6.0, 2022);
+
         testMovieLibrary.addMovie(testMovie);
 
         testMovieLibrary.removeMovie(testMovie);
@@ -48,9 +55,10 @@ class MovieLibraryTest {
     @Test
     @DisplayName("getMovies test")
     void getMovies() {
-        Movie testMovie2 = new Movie("test title 2", "test director 2", 6.0, 2022);
-
+        Movie testMovie = new Movie("test title", "test director", 6.0, 2022);
         testMovieLibrary.addMovie(testMovie);
+
+        Movie testMovie2 = new Movie("test title 2", "test director 2", 6.0, 2022);
         testMovieLibrary.addMovie(testMovie2);
 
         assertEquals(2, testMovieLibrary.getMovies().size());
@@ -59,6 +67,7 @@ class MovieLibraryTest {
     @Test
     @DisplayName("getMovieByTitle test")
     void getMovieByTitle() {
+        Movie testMovie = new Movie("test title", "test director", 6.0, 2022);
         testMovieLibrary.addMovie(testMovie);
 
         assertEquals(testMovie, testMovieLibrary.getMovieByTitle("test title"));
