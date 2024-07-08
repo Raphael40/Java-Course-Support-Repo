@@ -11,6 +11,5 @@ Supporting repo for Java Course
 
 `java-fundamentals-starter`
 `java-fundamentals-completed`
-`advanced-fundamentals-starter`
 `advanced-fundamentals-completed` 
 `movie-rating-app-completed`
