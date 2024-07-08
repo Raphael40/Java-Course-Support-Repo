@@ -1,38 +1,47 @@
 package main.java;
 
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    private static MovieLibrary movieLibrary;
+    public static MovieLibrary movieLibrary;
     final private static Scanner movieScanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         boolean running = true;
 
+        List<Movie> movies = new ArrayList<>();
+        movieLibrary = new MovieLibrary(movies);
+
         while (running) {
             printOptions();
             int choice = movieScanner.nextInt();
             movieScanner.nextLine();
-            // Make this a switch statement (for performance)
-            if (choice == 1) {
-                // addMovieInputs()
-                addMovie();
-            } else if (choice == 2) {
-                rateMovie();
-            } else if (choice == 3) {
-                listSingleMovie();
-            } else if (choice == 4) {
-                listAllMovies();
-            } else if (choice == 5) {
-                removeMovie();
-            } else if (choice == 6) {
-                System.out.println("Exiting...");
-                running = false;
-            } else {
-                System.out.println("Invalid choice.");
+            switch (choice) {
+                case 1:
+                    Movie movie = enterMovieDetails();
+                    addToMovieLibrary(movie);
+                    break;
+                case 2:
+                    rateMovie();
+                    break;
+                case 3:
+                    listSingleMovie();
+                    break;
+                case 4:
+                    listAllMovies();
+                    break;
+                case 5:
+                    removeMovie();
+                    break;
+                case 6:
+                    System.out.println("Exiting...");
+                    running = false;
+                    break;
+                default:
+                    System.out.println("Invalid choice.");
+                    break;
             }
         }
     }
@@ -46,27 +55,33 @@ public class Main {
         System.out.println("6. Exit");
     }
 
-    public static void addMovie() {
+    public static Movie enterMovieDetails() {
         try {
-            // Extract into seperate method
             System.out.println("Enter the title of the movie:");
             String title = movieScanner.nextLine();
             System.out.println("Enter the director of the movie:");
             String director = movieScanner.nextLine();
             System.out.println("Enter the rating of the movie:");
             double rating = movieScanner.nextDouble();
+            movieScanner.nextLine();
             System.out.println("Enter the year of the movie:");
             int year = movieScanner.nextInt();
+            movieScanner.nextLine();
 
-            Movie movie = new Movie(title, director, rating, year);
-            List<Movie> movies = new ArrayList<>();
-            movieLibrary = new MovieLibrary(movies);
+            return new Movie(title, director, rating, year);
+        } catch (Exception e) {
+            movieScanner.nextLine();
+            System.out.println("Invalid input. Please enter the correct data types.");
+            return null;
+        }
+    }
+
+    public static void addToMovieLibrary(Movie movie) {
+        try {
             movieLibrary.addMovie(movie);
             System.out.println("Movie added.");
         } catch (Exception e) {
-            throw new InputMismatchException("Invalid input. Please enter the correct data types.");
-
-//            System.out.println("Invalid input. Please enter the correct data types.");
+            System.out.println("Movie could not be added to the MovieLibrary." + Exception.class.getName());
         }
     }
 
@@ -100,7 +115,9 @@ public class Main {
 
             Movie movie = movieLibrary.getMovieByTitle(title);
             if (movie != null) {
+                System.out.print("\n");
                 System.out.println(movie.getTitle() + " (" + movie.getYear() + ") - " + movie.getDirector() + " - " + movie.getRating());
+                System.out.print("\n");
             } else {
                 System.out.println("Movie not found.");
             }
@@ -112,16 +129,18 @@ public class Main {
 
     private static void listAllMovies() {
         try {
-            if (movieLibrary.getMovies().isEmpty()) {
+            if (movieLibrary.movies().isEmpty()) {
                 System.out.println("No movies found.");
                 return;
             }
 
+            System.out.print("\n");
             int count = 1;
-            for (Movie movie : movieLibrary.getMovies()) {
+            for (Movie movie : movieLibrary.movies()) {
                 System.out.println(count + ": " + movie.getTitle() + " (" + movie.getYear() + ") - " + movie.getDirector() + " - " + movie.getRating());
                 count++;
             }
+            System.out.print("\n");
         } catch (Exception e) {
             movieScanner.nextLine();
             System.out.println("Invalid input. Please enter the correct data types.");

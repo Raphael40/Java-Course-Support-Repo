@@ -2,14 +2,12 @@ package main.java;
 
 import java.util.List;
 
-public class MovieLibrary {
-    final private List<Movie> movies;
-
-    public MovieLibrary(List<Movie> movies) {
-        this.movies = movies;
-    }
+public record MovieLibrary(List<Movie> movies) {
 
     public void addMovie(Movie movie) {
+        if (this.movies.contains(movie)) {
+            throw new IllegalArgumentException("Movie already exists.");
+        }
         this.movies.add(movie);
     }
 
@@ -19,10 +17,6 @@ public class MovieLibrary {
 
     public void removeMovie(Movie movie) {
         this.movies.remove(movie);
-    }
-
-    public List<Movie> getMovies() {
-        return this.movies;
     }
 
     public Movie getMovieByTitle(String title) {

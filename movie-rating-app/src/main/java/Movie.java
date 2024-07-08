@@ -1,10 +1,10 @@
 package main.java;
 
 public class Movie {
-    private String title;
-    private String director;
+    private final String title;
+    private final String director;
     private double rating;
-    private int year;
+    private final int year;
 
     public Movie(String title, String director, double rating, int year) {
         this.title = title;

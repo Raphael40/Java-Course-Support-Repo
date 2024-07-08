@@ -19,13 +19,13 @@ class MovieLibraryTest {
     }
 
     @Test
-    @DisplayName("addMovie test")
+    @DisplayName("addToMovieLibrary test")
     void addMovie() {
         Movie testMovie = new Movie("test title", "test director", 6.0, 2022);
 
         testMovieLibrary.addMovie(testMovie);
 
-        assertEquals(1, testMovieLibrary.getMovies().size());
+        assertEquals(1, testMovieLibrary.movies().size());
     }
 
     @Test
@@ -49,7 +49,7 @@ class MovieLibraryTest {
 
         testMovieLibrary.removeMovie(testMovie);
 
-        assertEquals(0, testMovieLibrary.getMovies().size());
+        assertEquals(0, testMovieLibrary.movies().size());
     }
 
     @Test
@@ -61,7 +61,7 @@ class MovieLibraryTest {
         Movie testMovie2 = new Movie("test title 2", "test director 2", 6.0, 2022);
         testMovieLibrary.addMovie(testMovie2);
 
-        assertEquals(2, testMovieLibrary.getMovies().size());
+        assertEquals(2, testMovieLibrary.movies().size());
     }
 
     @Test
