@@ -1,0 +1,16 @@
+Index: .idea/Java-Course-Support-Repo.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"JAVA_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\" inherit-compiler-output=\"true\">\r\n    <exclude-output />\r\n    <content url=\"file://$MODULE_DIR$\">\r\n      <sourceFolder url=\"file://$MODULE_DIR$/movie-rating-app/src\" isTestSource=\"false\" />\r\n      <sourceFolder url=\"file://$MODULE_DIR$/movie-rating-app/test\" isTestSource=\"true\" />\r\n    </content>\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n    <orderEntry type=\"library\" name=\"junit.jupiter\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"uk.webcompere.system.stubs.core\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"uk.webcompere.system.stubs.jupiter\" level=\"project\" />\r\n  </component>\r\n</module>
+===================================================================
+diff --git a/.idea/Java-Course-Support-Repo.iml b/.idea/Java-Course-Support-Repo.iml
+--- a/.idea/Java-Course-Support-Repo.iml	
++++ b/.idea/Java-Course-Support-Repo.iml	
+@@ -7,7 +7,6 @@
+       <sourceFolder url="file://$MODULE_DIR$/movie-rating-app/test" isTestSource="true" />
+     </content>
+     <orderEntry type="inheritedJdk" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+     <orderEntry type="library" name="junit.jupiter" level="project" />
+     <orderEntry type="library" name="uk.webcompere.system.stubs.core" level="project" />
+     <orderEntry type="library" name="uk.webcompere.system.stubs.jupiter" level="project" />

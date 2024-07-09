@@ -1,0 +1,15 @@
+Index: movie-rating-app/test/main/java/MainTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package main.java;\r\n\r\nimport org.junit.jupiter.api.*;\r\nimport org.junit.jupiter.api.extension.ExtendWith;\r\n\r\nimport java.io.ByteArrayInputStream;\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\n\r\nimport uk.org.webcompere.systemstubs.jupiter.SystemStubsExtension;\r\nimport uk.org.webcompere.systemstubs.jupiter.SystemStub;\r\nimport uk.org.webcompere.systemstubs.stream.SystemIn;\r\nimport uk.org.webcompere.systemstubs.stream.SystemOut;\r\n\r\nimport static org.junit.jupiter.api.Assertions.*;\r\n\r\n@ExtendWith(SystemStubsExtension.class)\r\n@TestMethodOrder(MethodOrderer.OrderAnnotation.class)\r\nclass MainTest {\r\n\r\n    @SystemStub\r\n    private SystemIn systemIn;\r\n\r\n    @SystemStub\r\n    private SystemOut systemOut;\r\n\r\n    @BeforeEach\r\n    void setUp() {\r\n        systemIn.setInputStream(new ByteArrayInputStream(new byte[0]));\r\n        systemOut.clear();\r\n    }\r\n\r\n    @Test\r\n    @Order(1)\r\n    @DisplayName(\"addToMovieLibrary test\")\r\n    void addToMovieLibrary() {\r\n        List<Movie> movies = new ArrayList<>();\r\n        Main.movieLibrary = new MovieLibrary(movies);\r\n\r\n        Movie movie = new Movie(\"test title\", \"test director\", 5.0, 2021);\r\n        Main.addToMovieLibrary(movie);\r\n\r\n        String output = systemOut.getText();\r\n        assertEquals(\"Movie added.\\n\", output);\r\n        assertTrue(output.contains(\"Movie added.\"));\r\n    }\r\n\r\n\r\n}
+===================================================================
+diff --git a/movie-rating-app/test/main/java/MainTest.java b/movie-rating-app/test/main/java/MainTest.java
+--- a/movie-rating-app/test/main/java/MainTest.java	
++++ b/movie-rating-app/test/main/java/MainTest.java	
+@@ -45,5 +45,4 @@
+         assertTrue(output.contains("Movie added."));
+     }
+ 
+-
+ }
+\ No newline at end of file

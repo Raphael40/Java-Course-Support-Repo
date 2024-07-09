@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b21d915f-bf9b-4a92-9282-99ee8a3a6880" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/arrays/Chocolates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hashmaps/HashMapExtra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hashmaps/Lambda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hashmaps/PremierLeague.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/methods/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/methods/Five.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/methods/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/methods/Hospital.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/methods/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/arrays/DataStructuresArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hashmaps/MarvelMovies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hashmaps/Hashing.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,13 +53,21 @@
     "Application.Anime.executor": "Run",
     "Application.Array.executor": "Run",
     "Application.Chocolates.executor": "Run",
+    "Application.Dog.executor": "Run",
+    "Application.Five.executor": "Run",
+    "Application.Game.executor": "Run",
+    "Application.HashMapExtra.executor": "Run",
+    "Application.Hashing.executor": "Run",
+    "Application.Hospital.executor": "Run",
+    "Application.Lambda.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.PremierLeague.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "advanced-fundamentals-completed",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "//wsl.localhost/Ubuntu/home/jfesting/workspace/projects/movie-rating-app",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.24482758",
     "settings.editor.selected.configurable": "advanced.settings"
@@ -64,13 +78,13 @@
       <recent name="\\wsl.localhost\Ubuntu\home\jfesting\workspace\projects\Java-Course-Support-Repo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Chocolates">
-    <configuration name="AnimeArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.java.arrays.AnimeArrayList" />
+  <component name="RunManager" selected="Application.Hospital">
+    <configuration name="Dog" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.methods.Dog" />
       <module name="Java-Course-Support-Repo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.java.arrays.*" />
+          <option name="PATTERN" value="main.java.methods.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,12 +92,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.java.arrays.Array" />
+    <configuration name="Five" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.methods.Five" />
       <module name="Java-Course-Support-Repo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.java.arrays.*" />
+          <option name="PATTERN" value="main.java.methods.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +105,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Chocolates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.java.arrays.Chocolates" />
+    <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.methods.Game" />
       <module name="Java-Course-Support-Repo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.java.arrays.*" />
+          <option name="PATTERN" value="main.java.methods.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +118,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.java.Main" />
+    <configuration name="Hospital" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.methods.Hospital" />
       <module name="Java-Course-Support-Repo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.java.*" />
+          <option name="PATTERN" value="main.java.methods.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lambda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.hashmaps.Lambda" />
+      <module name="Java-Course-Support-Repo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.hashmaps.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Chocolates" />
-        <item itemvalue="Application.AnimeArrayList" />
-        <item itemvalue="Application.Array" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Hospital" />
+        <item itemvalue="Application.Five" />
+        <item itemvalue="Application.Game" />
+        <item itemvalue="Application.Dog" />
+        <item itemvalue="Application.Lambda" />
       </list>
     </recent_temporary>
   </component>
