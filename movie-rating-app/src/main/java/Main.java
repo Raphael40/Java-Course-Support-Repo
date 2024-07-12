@@ -129,14 +129,14 @@ public class Main {
 
     private static void listAllMovies() {
         try {
-            if (movieLibrary.movies().isEmpty()) {
+            if (movieLibrary.getMovies().isEmpty()) {
                 System.out.println("No movies found.");
                 return;
             }
 
             System.out.print("\n");
             int count = 1;
-            for (Movie movie : movieLibrary.movies()) {
+            for (Movie movie : movieLibrary.getMovies()) {
                 System.out.println(count + ": " + movie.getTitle() + " (" + movie.getYear() + ") - " + movie.getDirector() + " - " + movie.getRating());
                 count++;
             }

@@ -24,12 +24,6 @@ class MainTest {
     @SystemStub
     private SystemOut systemOut;
 
-    @BeforeEach
-    void setUp() {
-        systemIn.setInputStream(new ByteArrayInputStream(new byte[0]));
-        systemOut.clear();
-    }
-
     @Test
     @Order(1)
     @DisplayName("addToMovieLibrary test")
