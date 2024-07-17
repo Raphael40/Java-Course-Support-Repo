@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b21d915f-bf9b-4a92-9282-99ee8a3a6880" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Java-Course-Support-Repo.iml" beforeDir="false" />
-    </list>
+    <list default="true" id="b21d915f-bf9b-4a92-9282-99ee8a3a6880" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,31 +37,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Anime.executor": "Run",
-    "Application.Array.executor": "Run",
-    "Application.Chocolates.executor": "Run",
-    "Application.Dog.executor": "Run",
-    "Application.Five.executor": "Run",
-    "Application.Game.executor": "Run",
-    "Application.HashMapExtra.executor": "Run",
-    "Application.Hashing.executor": "Run",
-    "Application.Hospital.executor": "Run",
-    "Application.Lambda.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.PremierLeague.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "advanced-fundamentals-completed",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "//wsl.localhost/Ubuntu/home/jfesting/workspace/projects/movie-rating-app",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.24482758",
-    "settings.editor.selected.configurable": "advanced.settings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Anime.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Array.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Chocolates.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Dog.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Five.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Game.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HashMapExtra.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Hashing.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Hospital.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Lambda.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PremierLeague.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;advanced-fundamentals-completed&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;//wsl.localhost/Ubuntu/home/jfesting/workspace/projects/movie-rating-app&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.24482758&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="\\wsl.localhost\Ubuntu\home\jfesting\workspace\projects\Java-Course-Support-Repo" />
