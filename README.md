@@ -13,4 +13,6 @@ Supporting repo for Java Course
 
 - `advanced-fundamentals-completed` + `advanced-fundamentals-starter`
 
+- `java-testing-intro-starter` + `java-testing-intro-completed`
+
 - `movie-rating-app-completed`
