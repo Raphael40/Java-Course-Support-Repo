@@ -6,17 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b21d915f-bf9b-4a92-9282-99ee8a3a6880" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Game.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/GameCharacter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Mage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Warrior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hashmaps/HashMapExtra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hashmaps/HashMapExtra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hashmaps/Hashing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hashmaps/LearnHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hashmaps/Lambda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hashmaps/Lambda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hashmaps/PremierLeague.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hashmaps/PremierLeague.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/methods/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/methods/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/methods/Five.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/methods/Five.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/methods/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/methods/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,9 +58,9 @@
     "git-widget-placeholder": "advanced-fundamentals-starter",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "//wsl.localhost/Ubuntu/home/jfesting/workspace/projects/movie-rating-app",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.24482758",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "advanced.settings"
   }
 }]]></component>
