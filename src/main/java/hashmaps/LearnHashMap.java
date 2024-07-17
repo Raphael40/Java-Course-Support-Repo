@@ -2,7 +2,7 @@ package main.java.hashmaps;
 
 import java.util.HashMap;
 
-public class Hashing {
+public class LearnHashMap {
     public static void main(String[] args) {
 
         // Create a HashMap
