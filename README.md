@@ -9,7 +9,10 @@ Supporting repo for Java Course
 
 ## Branches
 
-`java-fundamentals-starter`
-`java-fundamentals-completed`
-`advanced-fundamentals-completed` 
-`movie-rating-app-completed`
+- `java-fundamentals-starter`
+- `java-fundamentals-completed`
+
+- `advanced-fundamentals-completed`
+- `advanced-fundamentals-starter`
+
+- `movie-rating-app-completed`
