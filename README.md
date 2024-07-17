@@ -7,6 +7,8 @@ Supporting repo for Java Course
 2. Open this repo in IntelliJ IDEA
 3. Checkout to the branch that corresponds to the module you are working on
 
+`git switch <branch-name>` or `git checkout <branch-name>`
+
 ## Branches
 
 - `java-fundamentals-starter` + `java-fundamentals-completed`
